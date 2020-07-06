@@ -198,69 +198,9 @@ RadialSlider
 IRadialSlider
 ```
 
-## Spacing
-
-Spacing is especially important in raywenderlich.com code, as code needs to be easily readable as part of the tutorial. 
-
-### Indentation
-
-Indentation should be done using **spaces** — never tabs.  
-
-#### Blocks
-
-Indentation for blocks uses **4 spaces** for optimal readability:
-
-**AVOID:**
-
-```csharp
-for (int i = 0; i < 10; i++) 
-{
-  Debug.Log("index=" + i);
-}
-```
-
-**PREFER:**
-
-```csharp
-for (int i = 0; i < 10; i++) 
-{
-    Debug.Log("index=" + i);
-}
-```
-
-#### Line Wraps
-
-Indentation for line wraps should use **4 spaces** (not the default 8):
-
-**AVOID:**
-
-```csharp
-CoolUiWidget widget =
-        someIncrediblyLongExpression(that, reallyWouldNotFit, on, aSingle, line);
-```
-
-**PREFER:**
-
-```csharp
-CoolUiWidget widget =
-    someIncrediblyLongExpression(that, reallyWouldNotFit, on, aSingle, line);
-```
-
-### Line Length
-
-Lines should be no longer than **100** characters long.
-
-### Vertical Spacing
-
-There should be exactly one blank line between methods to aid in visual clarity 
-and organization. Whitespace within methods should separate functionality, but 
-having too many sections in a method often means you should refactor into
-several methods.
-
-
 ## Brace Style
 
-All braces get their own line as it is a C# convention:
+All braces get their own line as it is a C# convention. This is the number one thing for making code more legible:
 
 **AVOID:**
 
@@ -350,9 +290,78 @@ switch (variable)
 }
 ```
 
+## Spacing
+
+Spacing is another nice addition for legibility. This can be set in your IDE. 
+
+### Indentation
+
+Indentation should preferably be done using **spaces** — not tabs.  
+
+#### Blocks
+
+Indentation for blocks uses **4 spaces** for optimal readability:
+
+**AVOID:**
+
+```csharp
+for (int i = 0; i < 10; i++) 
+{
+  Debug.Log("index=" + i);
+}
+```
+
+**PREFER:**
+
+```csharp
+for (int i = 0; i < 10; i++) 
+{
+    Debug.Log("index=" + i);
+}
+```
+
+#### Line Wraps
+
+Indentation for line wraps should use **4 spaces** (not the default 8):
+
+**AVOID:**
+
+```csharp
+CoolUiWidget widget =
+        someIncrediblyLongExpression(that, reallyWouldNotFit, on, aSingle, line);
+```
+
+**PREFER:**
+
+```csharp
+CoolUiWidget widget =
+    someIncrediblyLongExpression(that, reallyWouldNotFit, on, aSingle, line);
+```
+
+### Line Length
+
+Lines should be no longer than **100** characters long. Break up long methods or expressions sensibly. For example:
+
+```csharp
+if (ENG_IGM_SharedIFXController.instance.sharedIFXModules.Count <= index ||
+	ENG_IGM_SharedIFXController.instance.sharedIFXModules[index] == null ||
+	!ENG_IGM_SharedIFXController.instance.sharedIFXModules[index].enabled)
+{
+	return null;
+}
+```
+
+### Vertical Spacing
+
+There should be exactly one blank line between methods to aid in visual clarity 
+and organization. Whitespace within methods should separate functionality, but 
+having too many sections in a method often means you should refactor into
+several methods.
+
+
 ## Language
 
-Use US English spelling.
+This one's for Mike! Use US English spelling.
 
 **AVOID:**
 
@@ -367,13 +376,6 @@ string color = "red";
 ```
 
 The exception here is `MonoBehaviour` as that's what the class is actually called.
-
-
-**AVOID**:
-
-:)
-
-**PREFER**:
 
 
 ## Credits

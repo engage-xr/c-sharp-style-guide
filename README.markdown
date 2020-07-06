@@ -405,7 +405,7 @@ public class #SCRIPTNAME# : MonoBehaviour
 }
 ```
 
-The template needs to replace the one saved at **Program Files\Unity\Hub\Editor\[EDITOR_VERSION]\Editor\Data\Resources\ScriptTemplates**. Then **KeywordReplace** just needs to be within a folder called **Editor** inside your project. (I've already added it to ENGAGE_Main).
+The template needs to replace the one saved at **Program Files\Unity\Hub\Editor\ [EDITOR_VERSION]\Editor\Data\Resources\ScriptTemplates**. Then **KeywordReplace** just needs to be within a folder called **Editor** inside your project. (I've already added it to ENGAGE_Main).
 
 ## Credits
 

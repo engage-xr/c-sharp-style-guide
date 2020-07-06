@@ -1,0 +1,16 @@
+// /*-------------------------------------------
+// ---------------------------------------------
+// Creation Date: #CREATIONDATE#
+// Author: #DEVELOPER#
+// Description: #PROJECTNAME#
+// Immersive VR Education
+// ---------------------------------------------
+// -------------------------------------------*/
+
+using UnityEngine;
+
+public class #SCRIPTNAME# : MonoBehaviour 
+{
+
+
+}

@@ -83,13 +83,15 @@ public class MyClass
 **AVOID:**
 
 ```csharp
-private int _myPrivateVariable
+private int _myPrivateVariable;
+public RectTransform rect_transform;
 ```
 
 **PREFER:**
 
 ```csharp
-private int myPrivateVariable
+private int myPrivateVariable;
+public RectTransform rectTransform;
 ```
 
 Static fields are the exception and should be written in **PascalCase**:
@@ -125,14 +127,15 @@ void DoSomething(Vector3 Location)
 void DoSomething(Vector3 location)
 ```
 
-Single character values are to be avoided except for temporary looping variables.
+Single character values are to be avoided except for temporary looping variables. As are nondescript parameters such as `arg0`
 
-### Actions
+### Actions & Events
 
-Actions are written in **PascalCase**. For example:
+Actions and Events are written in **PascalCase**, and should be in an `OnEvent` format. For example:
 
 ```csharp
-public event Action<int> ValueChanged;
+public event Action<int> OnValueChanged;
+public UnityEvent OnUserLoggedIn;
 ```
 
 ### Misc
@@ -163,7 +166,7 @@ Access level modifiers should be explicitly defined for classes, methods and mem
 
 ### Fields & Variables
 
-Prefer single declaration per line.
+Prefer single declaration per line. [I leave this one open to debate. I don't actually mind single line declarations where they make sense.]
 
 **AVOID:**
 

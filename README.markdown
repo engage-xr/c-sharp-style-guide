@@ -56,6 +56,24 @@ com.engage.fpsgame.hud.healthbar
 Engage.FPSGame.HUD.Healthbar
 ```
 
+On the whole, namespaces should be introduced and used throughout the Engage code base. 
+
+**AVOID**:
+
+```csharp
+public class LVR_UI_IGM_Keyboard : MonoBehaviour
+```
+
+**PREFER**:
+
+```csharp
+namespace Engage.UI.Input
+{
+	public class Keyboard : Monobehaviour
+```
+
+We could even start to use namespaces to separate functionality for different platforms. 
+
 ### Classes & Interfaces
 
 Classes and interfaces are written in **PascalCase**. For example `RadialSlider`. 

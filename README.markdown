@@ -281,6 +281,18 @@ if (someTest)
     DoSomethingElse();
 }
 ```
+
+## \<Summary>
+
+Unless your method is super simple or super obvious, be nice and provide a summary. This is easy enough as typing `///` will auto generate the summary for you :]
+
+```csharp
+/// <summary>
+/// Calls the virtual keyboard
+/// </summary>
+public virtual void OpenKeyboard()
+```
+
 ## Switch Statements
 
 Switch-statements come with `default` case by default (heh). If the `default` case is never reached, be sure to remove it.
@@ -361,7 +373,7 @@ CoolUiWidget widget =
 
 ### Line Length
 
-Lines should be no longer than **100** characters long. Break up long methods or expressions sensibly. For example:
+Not super important, but lines should be no longer than **100** characters long. Break up long methods or expressions sensibly. For example:
 
 ```csharp
 if (ENG_IGM_SharedIFXController.instance.sharedIFXModules.Count <= index || 

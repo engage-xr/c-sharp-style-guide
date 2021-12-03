@@ -3,7 +3,7 @@
 // Creation Date: #CREATIONDATE#
 // Author: #DEVELOPER#
 // Description: #PROJECTNAME#
-// Immersive VR Education
+// Engage XR
 // ---------------------------------------------
 // -------------------------------------------*/
 

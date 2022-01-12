@@ -8,6 +8,8 @@ Our overarching goals are **conciseness**, **readability** and **simplicity**. A
 
 This style guide is based on C# and Unity conventions. 
 
+![](images/Engage_Logo_Large_Black.png)
+
 ## Table of Contents
 
 - [Nomenclature](#nomenclature)

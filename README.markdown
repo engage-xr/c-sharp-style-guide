@@ -1,6 +1,6 @@
-# The [Un]Official Immersive VR Education C# Style Guide
+# The Official Immersive VR Education C# Style Guide
 
-This style guide is based heavily on the raywenderlich.com style guide. As such, it may be a bit different from ones that you are used to, as it focuses on code legibility.   
+This style guide is based heavily on the [raywenderlich.com](https://www.raywenderlich.com/home) style guide. As such, it may be a bit different from ones that you are used to, as it focuses on code legibility.   
 
 Our overarching goals are **conciseness**, **readability** and **simplicity**. Also, this guide is written to keep **Unity** in mind. 
 
@@ -437,7 +437,9 @@ public class #SCRIPTNAME# : MonoBehaviour
 }
 ```
 
-The template needs to replace the one saved at **Program Files\Unity\Hub\Editor\ [EDITOR_VERSION]\Editor\Data\Resources\ScriptTemplates**. Then **KeywordReplace** just needs to be within a folder called **Editor** inside your project. (I've already added it to ENGAGE_Main).
+Unity recently updated the ScriptTemplates, and now you can save them for use directly in your project. No more replacing them in the **Program Files\Unity\Hub\Editor\ [EDITOR_VERSION]\Editor\Data\Resources\ScriptTemplates** folder every time you update Unity! 
+
+The C# script template, along with **KeywordReplace** have been added to the **ENGAGE_Main** repo, so you are already using them! :]
 
 ## Credits
 

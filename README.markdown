@@ -112,10 +112,10 @@ private int myPrivateVariable;
 public RectTransform rectTransform;
 ```
 
-Static fields are the exception and should be written in **PascalCase**:
+Readonly Static fields are the exception and should be written in **PascalCase**:
 
 ```csharp
-public static int TheAnswer = 42;
+private static readonly int TheAnswer = 42;
 ```
 ### Properties
 

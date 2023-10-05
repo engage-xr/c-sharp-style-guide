@@ -412,22 +412,13 @@ string color = "red";
 
 The exception here is `MonoBehaviour` as that's what the class is actually called.
 
-## Standard Header and the C# Template
+## C# Template
 
 Unity uses templates for when you generate a new script in the Editor. It's not a commonly known fact that these are editable! No more unnecessary `using System.Collections.Generic`
 
 And not only is the template configurable, but you can use an editor script to manipulate your template, thanks to the `UnityEditor.AssetModificationProcessor` Below is the template I use. This is also included in the repo, along with the Editor file **KeywordReplace**, which replaces the variables inside **##** at import. 
 
 ```csharp
-// /*-------------------------------------------
-// ---------------------------------------------
-// Creation Date: #CREATIONDATE#
-// Author: #DEVELOPER#
-// Description: #PROJECTNAME#
-// Immersive VR Education
-// ---------------------------------------------
-// -------------------------------------------*/
-
 using UnityEngine;
 
 public class #SCRIPTNAME# : MonoBehaviour 

@@ -1,12 +1,3 @@
-// /*-------------------------------------------
-// ---------------------------------------------
-// Creation Date: #CREATIONDATE#
-// Author: #DEVELOPER#
-// Description: #PROJECTNAME#
-// Engage XR
-// ---------------------------------------------
-// -------------------------------------------*/
-
 using UnityEngine;
 
 public class #SCRIPTNAME# : MonoBehaviour 
